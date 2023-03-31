@@ -1,0 +1,86 @@
+
+body {
+  background-color: #7300d1;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin: 20px 5%;
+  color: #FEF2BF;
+}
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: repeat(2, 150px);
+  grid-gap: 30px;
+  position:relative;
+  bottom: 100px;
+}
+.grid-element {
+  border: 12px solid black;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: ghostwhite;
+  font-size: 1.6rem;
+  font-weight:500;
+}
+
+.red {
+  background-color: #f75069;
+  
+}
+
+.green {
+  background-color: #2bd42b;
+}
+
+.blue {
+  background-color: #35357e;
+}
+
+.yellow {
+  background-color: #d6d629;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+/* Start here button */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  position: relative;
+  bottom:200px;
+  height: 50px;
+  width: 100px;
+  background-color: #ec4680;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  transition-duration: 350ms;
+  transition-property: all;
+/*   transition: <duration> <property> <delay> <time-function> ; */
+}
+.btn:hover {
+  background-color: #68d9d9ff;
+  cursor:pointer;
+}
